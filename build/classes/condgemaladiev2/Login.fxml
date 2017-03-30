@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="CENTER" hgap="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="395.0" prefWidth="426.0" vgap="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="condgemaladiev2.LoginController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="NEVER" maxWidth="290.0" minWidth="10.0" prefWidth="135.0" />
+    <ColumnConstraints hgrow="NEVER" maxWidth="305.0" minWidth="10.0" prefWidth="305.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="NEVER" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="NEVER" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="NEVER" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="NEVER" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="NEVER" />
+  </rowConstraints>
+   <children>
+      <Label prefHeight="50.0" prefWidth="250.0" text="Username" GridPane.hgrow="NEVER" GridPane.rowIndex="2" GridPane.vgrow="NEVER">
+         <font>
+            <Font name="Ubuntu Mono" size="20.0" />
+         </font></Label>
+      <Label prefHeight="50.0" prefWidth="250.0" text="Password" GridPane.hgrow="NEVER" GridPane.rowIndex="3" GridPane.vgrow="NEVER">
+         <font>
+            <Font name="Ubuntu Mono" size="20.0" />
+         </font></Label>
+      <TextField fx:id="txtUser" prefHeight="30.0" prefWidth="130.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <children>
+            <Button mnemonicParsing="false" onAction="#clickConnectBtn" prefHeight="25.0" prefWidth="72.0" text="Connect" HBox.hgrow="NEVER" />
+            <Button mnemonicParsing="false" onAction="#clickBtnLogIn" prefHeight="25.0" prefWidth="72.0" text="Login" HBox.hgrow="NEVER" />
+            <Button mnemonicParsing="false" onAction="#clickBtnClear" prefHeight="25.0" prefWidth="72.0" text="Clear" HBox.hgrow="NEVER" />
+         </children>
+      </HBox>
+      <PasswordField fx:id="txtPass" prefHeight="30.0" prefWidth="130.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <ImageView fitHeight="177.0" fitWidth="357.0" pickOnBounds="true" preserveRatio="true" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowSpan="2" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+         <image>
+            <Image url="@../img/join.png" />
+         </image></ImageView>
+   </children>
+   <padding>
+      <Insets bottom="25.0" left="25.0" right="25.0" />
+   </padding>
+</GridPane>

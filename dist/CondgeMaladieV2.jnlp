@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="CondgeMaladieV2.jnlp">
+  <information>
+    <title>CondgeMaladieV2</title>
+    <vendor>ikerfah</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="CondgeMaladieV2.jar" size="89285" download="eager" />
+    <jar href="lib/mysql-connector-java-5.1.39-bin.jar" size="989497" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="CondgeMaladieV2" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="condgemaladiev2.Main"  name="CondgeMaladieV2" />
+  <update check="always"/>
+</jnlp>
